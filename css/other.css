@@ -1,0 +1,58 @@
+/* PC */
+@media all and (min-width: 780px) {
+    #main_contents {
+        width: 100%;
+        min-height: 1300px;
+    }
+    .tanakawashi_privacy_tokusho {
+        width: 800px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tanakawashi_privacy_tokusho ul h1 {
+        font-size: 1.5rem;
+    }
+    .tanakawashi_privacy_tokusho ul + ul {
+        padding-top: 30px;
+    }
+    .tanakawashi_privacy_tokusho ul h2 {
+        font-size: 1.4rem;
+    }
+    .tanakawashi_privacy_tokusho ul li ul li {
+        font-size: 1.3rem;
+    }
+    .tanakawashi_privacy_tokusho ul .list {
+        list-style: inside;
+    }
+}
+/* Smartphone */
+@media all and (max-width: 779px) {
+    #main_contents {
+        width: 100%;
+        padding-top: 25px;
+    }
+    .tanakawashi_privacy_tokusho {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tanakawashi_privacy_tokusho ul h1 {
+        font-size: 1.2rem;
+        font-style: bold;
+    }
+    .tanakawashi_privacy_tokusho ul + ul {
+        padding-top: 20px;
+    }
+    .tanakawashi_privacy_tokusho ul h2 {
+        font-size: 1.1rem;
+        font-style: bold;
+    }
+    .tanakawashi_privacy_tokusho ul li ul li {
+        font-size: 1.0rem;
+    }
+    .tanakawashi_privacy_tokusho ul .list {
+        list-style: inside;
+    }
+}
