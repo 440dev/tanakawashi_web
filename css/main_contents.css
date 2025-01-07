@@ -1,0 +1,163 @@
+/* 共通 */
+#main_contents {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+#main_contents > #tanakawashi_intro_img {
+    position: relative;
+    padding-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#main_contents > .top_contents {
+    display: flex;
+}
+/* PC */
+@media all and (min-width: 780px) {
+    #main_contents {
+        min-height: 800px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+		background-image: url('../image/all/back.png');
+		background-repeat: repeat;
+    }
+    #main_contents > #tanakawashi_intro_img {
+        width: 860px;
+    }
+    #main_contents > #tanakawashi_intro_img > img {
+        width: 100%;
+    }
+    #main_contents > .top_contents {
+        width: 1080px;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #main_contents > .top_contents > .pagelink_info {
+        width: 50%;
+        max-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #main_contents > .top_contents > .pagelink_info > a > img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #main_contents > .top_contents > .oshirase_info {
+        position: relative;
+        width: 50%;
+        min-height: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #main_contents > .top_contents > .oshirase_info > .info_board {
+        display: block;
+        position: relative;
+        width: 80%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-image: url(../image/all/back_big.png);
+        background-size:100% 100%;
+    }
+    #main_contents > .top_contents > .oshirase_info > .info_board > li {
+        display: block;
+        position: relative;
+        width: 100%;
+        padding-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 10px;
+    }
+    #main_contents > .top_contents > .oshirase_info > .info_board > li > h2 {
+        width: 95%;
+        color: black;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.5rem;
+    }
+    #main_contents > .top_contents > .oshirase_info > .info_board > li > h3 {
+        width: 80%;
+        color: black;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: right;
+        font-size: 0.8rem;
+    }
+    #main_contents > .top_contents > .oshirase_info > .info_board > li > p {
+        width: 90%;
+        color: black;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.2rem;
+        padding-top: 10px;
+    }
+}
+/* Smartphone */
+@media all and (max-width: 779px) {
+    #main_contents {
+        padding-bottom: 25px;
+    }
+    #main_contents > #tanakawashi_intro_img {
+        padding-top: 25px;
+		width: 90%;
+	}
+    #main_contents > #tanakawashi_intro_img > img {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+	}
+    #main_contents > .top_contents {
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    #main_contents > .top_contents > .pagelink_info {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    #main_contents > .top_contents > .pagelink_info > a > img{
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5px;
+    }
+    #main_contents > .top_contents > .oshirase_info {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    #main_contents > .top_contents > .oshirase_info > .info_board > li > h2 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #777777;
+    }
+    #main_contents > .top_contents > .oshirase_info > .info_board > li > h3 {
+        font-size: 1.0rem;
+        text-align: right;
+        color: #777777;
+    }
+
+    #main_contents > .top_contents > .oshirase_info > .info_board > li > p {
+        padding-left: 15px;
+        font-size: 1.1rem;
+        color: #777777;
+    }
+    #main_contents > .top_contents > .oshirase_info > .info_board > li + li {
+        padding-top: 15px;
+    }
+
+}
